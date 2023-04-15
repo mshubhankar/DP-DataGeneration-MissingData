@@ -1,0 +1,14 @@
+D zero one 
+D zero one two four three five six 
+C 0 21
+D one zero three two four eight nine six five seven 
+C 0 90
+D zero one 
+D zero one 
+D one zero 
+D zero one 
+D zero three one two 
+C 0 125
+D one zero 
+C 0 90
+D zero one 

@@ -1,0 +1,27 @@
+/.idea
+*.log
+__pycache__/
+*.py[cod]
+*$py.class
+_build
+_static
+_templates
+.DS_store
+.venv
+*.swo
+*.swp
+*.swn
+*.pyc
+.cache/
+
+# pip package metadata
+*egg-info/
+
+# conda build metadata
+build/
+dist/
+lib/
+info/
+
+# Holoclean specific files
+debug/

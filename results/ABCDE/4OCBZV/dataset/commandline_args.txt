@@ -1,0 +1,5 @@
+{
+  "output_dir": "./results/ABCDE",
+  "dataset": "./datasets/adult.csv",
+  "batch_size": 4
+}

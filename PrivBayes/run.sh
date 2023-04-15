@@ -1,0 +1,1 @@
+./privbayes_new adult 1 1 ../datasets/random/adult_0.1.csv ../datasets/Original/adult.domain ./data/ 4

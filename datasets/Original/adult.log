@@ -1,0 +1,172 @@
+EXP_ACCURACY
+datasets/Original/adult.csv
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	income	0.82	0.88	0.87	0.88	0.85	0.93
+AdaBoostClassifier	income	0.80	0.80	0.97	0.88	0.85	0.93
+GradientBoostingClassifier	income	0.83	0.84	0.95	0.89	0.86	0.94
+XGBClassifier	income	0.78	0.78	0.97	0.87	0.84	0.92
+RandomForestClassifier	income	0.83	0.87	0.90	0.88	0.86	0.94
+BernoulliNB	income	0.68	0.89	0.64	0.74	0.80	0.91
+DecisionTreeClassifier	income	0.77	0.85	0.82	0.84	0.72	0.83
+BaggingClassifier	income	0.78	0.87	0.82	0.85	0.83	0.91
+MLPClassifier	income	0.76	0.89	0.77	0.83	0.82	0.91
+average	income	0.78	0.85	0.86	0.85	0.83	0.91
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	sex	0.83	0.72	0.80	0.76	0.92	0.81
+AdaBoostClassifier	sex	0.83	0.72	0.77	0.75	0.90	0.79
+GradientBoostingClassifier	sex	0.84	0.75	0.77	0.76	0.91	0.81
+XGBClassifier	sex	0.81	0.75	0.65	0.69	0.91	0.79
+RandomForestClassifier	sex	0.81	0.71	0.70	0.70	0.91	0.82
+BernoulliNB	sex	0.80	0.65	0.87	0.74	0.90	0.77
+DecisionTreeClassifier	sex	0.78	0.67	0.64	0.66	0.74	0.55
+BaggingClassifier	sex	0.80	0.74	0.59	0.65	0.88	0.74
+MLPClassifier	sex	0.80	0.70	0.70	0.70	0.89	0.78
+average	sex	0.81	0.71	0.72	0.71	0.88	0.76
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	marital-status	0.89	0.82	0.83	0.82	0.96	0.91
+AdaBoostClassifier	marital-status	0.88	0.79	0.85	0.82	0.95	0.89
+GradientBoostingClassifier	marital-status	0.90	0.86	0.82	0.84	0.96	0.92
+XGBClassifier	marital-status	0.86	0.75	0.82	0.78	0.94	0.87
+RandomForestClassifier	marital-status	0.88	0.85	0.76	0.80	0.95	0.90
+BernoulliNB	marital-status	0.78	0.69	0.55	0.61	0.88	0.70
+DecisionTreeClassifier	marital-status	0.83	0.72	0.76	0.74	0.81	0.63
+BaggingClassifier	marital-status	0.86	0.80	0.73	0.76	0.93	0.84
+MLPClassifier	marital-status	0.86	0.78	0.78	0.78	0.94	0.87
+average	marital-status	0.86	0.78	0.77	0.77	0.93	0.84
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	education	0.67	0.71	0.68	0.69	0.77	0.83
+AdaBoostClassifier	education	0.66	0.69	0.70	0.69	0.65	0.65
+GradientBoostingClassifier	education	0.66	0.69	0.70	0.69	0.65	0.65
+XGBClassifier	education	0.66	0.69	0.70	0.69	0.65	0.65
+RandomForestClassifier	education	0.66	0.69	0.70	0.69	0.68	0.71
+BernoulliNB	education	0.56	0.59	0.71	0.64	0.60	0.65
+DecisionTreeClassifier	education	0.66	0.69	0.70	0.69	0.65	0.65
+BaggingClassifier	education	0.66	0.69	0.70	0.69	0.65	0.65
+MLPClassifier	education	0.66	0.68	0.71	0.70	0.77	0.83
+average	education	0.65	0.68	0.70	0.69	0.67	0.69
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	age	0.75	0.50	0.09	0.15	0.67	0.39
+AdaBoostClassifier	age	0.74	0.47	0.12	0.20	0.67	0.41
+GradientBoostingClassifier	age	0.75	0.49	0.10	0.17	0.70	0.42
+XGBClassifier	age	0.74	0.47	0.14	0.22	0.65	0.38
+RandomForestClassifier	age	0.75	0.52	0.10	0.17	0.68	0.40
+BernoulliNB	age	0.65	0.38	0.62	0.47	0.70	0.40
+DecisionTreeClassifier	age	0.68	0.35	0.30	0.32	0.56	0.28
+BaggingClassifier	age	0.73	0.39	0.16	0.22	0.62	0.35
+MLPClassifier	age	0.72	0.41	0.22	0.29	0.61	0.36
+average	age	0.72	0.44	0.21	0.24	0.65	0.38
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	workclass	0.85	0.00	0.00	0.00	0.55	0.16
+AdaBoostClassifier	workclass	0.84	0.17	0.04	0.06	0.54	0.17
+GradientBoostingClassifier	workclass	0.85	0.11	0.01	0.03	0.53	0.15
+XGBClassifier	workclass	0.85	0.24	0.03	0.05	0.53	0.16
+RandomForestClassifier	workclass	0.85	0.08	0.01	0.01	0.51	0.15
+BernoulliNB	workclass	0.78	0.16	0.15	0.15	0.57	0.19
+DecisionTreeClassifier	workclass	0.77	0.16	0.16	0.16	0.51	0.14
+BaggingClassifier	workclass	0.81	0.12	0.06	0.08	0.49	0.13
+MLPClassifier	workclass	0.83	0.19	0.08	0.11	0.53	0.15
+average	workclass	0.83	0.14	0.06	0.07	0.53	0.16
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	education-num	0.68	0.51	0.86	0.64	0.69	0.45
+AdaBoostClassifier	education-num	0.68	0.51	0.86	0.64	0.77	0.66
+GradientBoostingClassifier	education-num	0.68	0.51	0.86	0.64	0.72	0.48
+XGBClassifier	education-num	0.68	0.51	0.86	0.64	0.70	0.46
+RandomForestClassifier	education-num	0.68	0.50	0.86	0.64	0.70	0.46
+BernoulliNB	education-num	0.68	0.51	0.87	0.64	0.76	0.58
+DecisionTreeClassifier	education-num	0.68	0.51	0.86	0.64	0.73	0.49
+BaggingClassifier	education-num	0.68	0.51	0.86	0.64	0.73	0.49
+MLPClassifier	education-num	0.68	0.51	0.86	0.64	0.70	0.46
+average	education-num	0.68	0.51	0.86	0.64	0.72	0.50
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	occupation	0.82	0.17	0.07	0.10	0.53	0.16
+AdaBoostClassifier	occupation	0.80	0.12	0.07	0.09	0.52	0.14
+GradientBoostingClassifier	occupation	0.81	0.10	0.05	0.07	0.50	0.14
+XGBClassifier	occupation	0.79	0.14	0.09	0.11	0.51	0.15
+RandomForestClassifier	occupation	0.82	0.13	0.05	0.07	0.52	0.14
+BernoulliNB	occupation	0.72	0.19	0.33	0.24	0.57	0.18
+DecisionTreeClassifier	occupation	0.71	0.13	0.19	0.15	0.49	0.14
+BaggingClassifier	occupation	0.78	0.13	0.11	0.12	0.49	0.14
+MLPClassifier	occupation	0.79	0.14	0.10	0.12	0.52	0.15
+average	occupation	0.78	0.14	0.12	0.12	0.52	0.15
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	relationship	0.90	0.49	0.24	0.32	0.86	0.39
+AdaBoostClassifier	relationship	0.89	0.43	0.32	0.37	0.85	0.35
+GradientBoostingClassifier	relationship	0.88	0.38	0.27	0.31	0.85	0.34
+XGBClassifier	relationship	0.88	0.30	0.17	0.22	0.80	0.29
+RandomForestClassifier	relationship	0.89	0.44	0.17	0.24	0.83	0.32
+BernoulliNB	relationship	0.86	0.36	0.51	0.42	0.84	0.35
+DecisionTreeClassifier	relationship	0.84	0.27	0.38	0.32	0.63	0.17
+BaggingClassifier	relationship	0.88	0.30	0.13	0.18	0.76	0.24
+MLPClassifier	relationship	0.88	0.40	0.36	0.38	0.84	0.33
+average	relationship	0.88	0.37	0.28	0.31	0.81	0.31
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	race	0.90	0.05	0.01	0.02	0.61	0.12
+AdaBoostClassifier	race	0.89	0.08	0.02	0.04	0.57	0.10
+GradientBoostingClassifier	race	0.90	0.12	0.03	0.05	0.57	0.11
+XGBClassifier	race	0.90	0.00	0.00	0.00	0.58	0.12
+RandomForestClassifier	race	0.91	0.00	0.00	0.00	0.58	0.11
+BernoulliNB	race	0.85	0.16	0.18	0.17	0.60	0.12
+DecisionTreeClassifier	race	0.78	0.08	0.15	0.11	0.50	0.09
+BaggingClassifier	race	0.88	0.10	0.05	0.06	0.55	0.10
+MLPClassifier	race	0.89	0.20	0.10	0.14	0.64	0.14
+average	race	0.88	0.09	0.06	0.07	0.58	0.11
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	capital-gain	0.00	0.00	0.00	0.00	0.00	-0.00
+AdaBoostClassifier	capital-gain	0.00	0.00	0.00	0.00	0.00	-0.00
+GradientBoostingClassifier	capital-gain	0.01	0.00	0.00	0.00	0.00	-0.00
+XGBClassifier	capital-gain	0.00	0.00	0.00	0.00	0.00	-0.00
+RandomForestClassifier	capital-gain	0.01	0.00	0.00	0.00	0.00	-0.00
+BernoulliNB	capital-gain	0.03	0.00	0.00	0.00	0.00	-0.00
+DecisionTreeClassifier	capital-gain	0.10	0.00	0.00	0.00	0.00	-0.00
+BaggingClassifier	capital-gain	0.06	0.00	0.00	0.00	0.00	-0.00
+MLPClassifier	capital-gain	0.03	0.00	0.00	0.00	0.00	-0.00
+average	capital-gain	0.03	0.00	0.00	0.00	0.00	0.00
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	capital-loss	0.95	0.95	1.00	0.97	0.57	0.95
+AdaBoostClassifier	capital-loss	0.95	0.95	1.00	0.97	0.54	0.95
+GradientBoostingClassifier	capital-loss	0.95	0.95	1.00	0.97	0.55	0.96
+XGBClassifier	capital-loss	0.95	0.95	1.00	0.97	0.53	0.95
+RandomForestClassifier	capital-loss	0.95	0.95	1.00	0.97	0.55	0.95
+BernoulliNB	capital-loss	0.94	0.95	0.99	0.97	0.62	0.97
+DecisionTreeClassifier	capital-loss	0.93	0.95	0.98	0.96	0.50	0.95
+BaggingClassifier	capital-loss	0.95	0.95	1.00	0.97	0.50	0.95
+MLPClassifier	capital-loss	0.95	0.95	1.00	0.97	0.42	0.93
+average	capital-loss	0.94	0.95	1.00	0.97	0.53	0.95
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	hours-per-week	0.76	0.79	0.93	0.86	0.63	0.84
+AdaBoostClassifier	hours-per-week	0.74	0.79	0.92	0.85	0.59	0.83
+GradientBoostingClassifier	hours-per-week	0.75	0.79	0.92	0.85	0.60	0.84
+XGBClassifier	hours-per-week	0.76	0.79	0.94	0.86	0.57	0.82
+RandomForestClassifier	hours-per-week	0.74	0.79	0.92	0.85	0.59	0.84
+BernoulliNB	hours-per-week	0.68	0.80	0.79	0.79	0.64	0.85
+DecisionTreeClassifier	hours-per-week	0.67	0.79	0.79	0.79	0.52	0.78
+BaggingClassifier	hours-per-week	0.66	0.78	0.79	0.78	0.56	0.81
+MLPClassifier	hours-per-week	0.72	0.79	0.88	0.83	0.58	0.82
+average	hours-per-week	0.72	0.79	0.87	0.83	0.59	0.83
+
+classifier			target_attr	syn_acc	syn_pre	syn_recall	syn_f1	auroc	auprc
+LogisticRegression	native-country	0.83	0.86	0.96	0.91	0.58	0.88
+AdaBoostClassifier	native-country	0.85	0.86	0.98	0.92	0.52	0.85
+GradientBoostingClassifier	native-country	0.85	0.87	0.97	0.92	0.57	0.88
+XGBClassifier	native-country	0.85	0.86	0.98	0.92	0.56	0.88
+RandomForestClassifier	native-country	0.84	0.86	0.97	0.91	0.58	0.89
+BernoulliNB	native-country	0.84	0.86	0.97	0.91	0.57	0.88
+DecisionTreeClassifier	native-country	0.82	0.87	0.94	0.90	0.54	0.87
+BaggingClassifier	native-country	0.82	0.86	0.95	0.90	0.55	0.87
+MLPClassifier	native-country	0.83	0.86	0.96	0.91	0.52	0.87
+average	native-country	0.84	0.86	0.96	0.91	0.55	0.87
+
+

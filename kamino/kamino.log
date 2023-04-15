@@ -1,0 +1,44 @@
+17:15:19 - [ INFO] - Path_weight= ./testdata/bank/MAR/bank.w
+17:15:19 - [ INFO] - all_num_attrs= ['balance', 'duration', 'pdays']
+17:15:19 - [ INFO] - sequence= ['combo', 'education', 'poutcome', 'job', 'balance', 'month', 'day', 'campaign', 'pdays', 'previous', 'age', 'duration', 'y']
+concat_attrs= []
+17:15:19 - [ INFO] - TIME_SEQ= 4.863739013671875e-05
+17:15:19 - [ INFO] - TIME_IID= 0.0736551284790039
+17:15:19 - [ INFO] - existing attrs= ['combo']
+target_attr= education
+17:15:30 - [ INFO] - Loaded 90422 rows with 271266 cells
+17:15:31 - [ INFO] - DONE Loading bank_missing_0.35_concat_0413-1715.csv
+17:15:32 - [ INFO] - detected 61094 potentially erroneous cells
+17:15:39 - [ INFO] - DONE with error detection.
+17:15:39 - [ INFO] - DONE with quantization
+17:16:11 - [ INFO] - DONE with domain preparation.
+17:18:17 - [ INFO] - TupleEmbedding: done saving embedding from current run
+17:18:17 - [ INFO] - DONE with training the autoencoder model
+17:18:17 - [ INFO] - relevant_dc_id= []
+relevant_dc_idx_all= []
+17:40:43 - [ INFO] - existing attrs= ['combo', 'education']
+target_attr= poutcome
+17:40:56 - [ INFO] - Loaded 90422 rows with 361688 cells
+17:40:57 - [ INFO] - DONE Loading bank_missing_0.35_concat_0413-1715.csv
+17:40:58 - [ INFO] - detected 45211 potentially erroneous cells
+17:41:04 - [ INFO] - DONE with error detection.
+17:41:04 - [ INFO] - DONE with quantization
+17:41:41 - [ INFO] - DONE with domain preparation.
+17:41:44 - [ INFO] - TupleEmbedding: done loading embedding from previous run
+17:44:13 - [ INFO] - TupleEmbedding: done saving embedding from current run
+17:44:13 - [ INFO] - DONE with training the autoencoder model
+17:44:13 - [ INFO] - relevant_dc_id= []
+relevant_dc_idx_all= []
+17:44:42 - [ INFO] - existing attrs= ['combo', 'education', 'poutcome']
+target_attr= job
+17:44:55 - [ INFO] - Loaded 90422 rows with 452110 cells
+17:44:56 - [ INFO] - DONE Loading bank_missing_0.35_concat_0413-1715.csv
+17:44:57 - [ INFO] - detected 61042 potentially erroneous cells
+17:45:05 - [ INFO] - DONE with error detection.
+17:45:05 - [ INFO] - DONE with quantization
+17:45:52 - [ INFO] - DONE with domain preparation.
+17:45:55 - [ INFO] - TupleEmbedding: done loading embedding from previous run
+17:48:10 - [ INFO] - TupleEmbedding: done saving embedding from current run
+17:48:10 - [ INFO] - DONE with training the autoencoder model
+17:48:10 - [ INFO] - relevant_dc_id= []
+relevant_dc_idx_all= []
