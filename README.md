@@ -1,6 +1,6 @@
 # Differentially Private Data Generation with Missing Data
 
-This repository contains the codebase and the full paper for the paper Differentially Private Data Generation with Missing Data.
+This repository contains the codebase and the [full paper](full_paper.pdf) for the paper Differentially Private Data Generation with Missing Data.
 All baselines except Kamino can be accessed using the ```config.py``` file. Kamino has a sub repository inside this codebase and need to run from the respective folder.
 
 ## Setup
