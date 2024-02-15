@@ -10,20 +10,32 @@ from snsynth.pytorch.nn import DPCTGAN, PATECTGAN, PATEGAN, DPGAN
 from snsynth.preprocessors.data_transformer import BaseTransformer
 from DPautoGAN.dp_autogan import DPAUTOGAN
 from misgan.misgan import misgan
+from impute import impute_data
+import aim 
+from mbi import Dataset, Domain
+import itertools
+import json
 
 params = config.params
-
+params['epsilon_impute'] = 1-params['epsilon']
 params['orig_path'] = f'{params["orig_data_loc"]}/{params["dataset"]}.csv'
 params['domain_path'] = f'{params["orig_data_loc"]}/{params["dataset"]}.domain'
+params['aim_domain_path'] = f'{params["orig_data_loc"]}/{params["dataset"]}-domain.json'
 if os.path.isfile(params['domain_path']) == False:
     utils.create_domain(params['orig_path'])
 
+if os.path.isfile(params['aim_domain_path']) == False:
+    utils.create_aim_domain(params['orig_path'])
 
 if params['missing_p']:
     params['data_loc'] = utils.create_missing(params)
 else:
     params['data_loc'] = params['orig_path']
-encoding1, encoding2, all_cat_attrs = preprocess.preprocess(params, preprocess=True) #Two types of encoding. second for pategan
+
+if params['impute']:
+    params = impute_data(params)
+
+encoding1, encoding2, encoding3, all_cat_attrs = preprocess.preprocess(params, preprocess=True) #Two types of encoding. second for pategan
 df, encoders = encoding1 #default encoding is 1; change for pategan
 all_cols = df.columns
 
@@ -72,6 +84,26 @@ all_cat_attrs = list(set(all_cols) - set(all_num_attrs))
 for r in range(params['runs']):
     for b in params['baselines']:
             if b in baselines:
+
+                if b.startswith('AIM'):
+                    df = encoding3[0]
+                    if b == 'AIM':
+                        df = encoding3[0].dropna()
+
+                    domain_config = json.load(open(params['aim_domain_path']))
+                    aim_domain = Domain(domain_config.keys(), domain_config.values())
+                    data = Dataset(df, aim_domain)
+                    workload = list(itertools.combinations(data.domain, 2))
+                    workload = [cl for cl in workload if data.domain.size(cl) <= 10000]
+                    
+                    workload = [(cl, 1.0) for cl in workload]
+                    n_row = len(df)
+                    n_len = len(str(n_row)) + 1
+                    mech = aim.AIM(params['epsilon'], float(f'1e-{n_len}') , max_model_size=80)
+                    synth = mech.run(data, workload)
+                    syn_data = preprocess.inverse(synth.df, encoding3[1], all_cols)
+                    syn_data.to_csv(params['results_dir']+f'/{b}_run{r}.syn', index=False)
+
                 if b == 'PATEGAN' or b == 'DPautoGAN' or b == 'misgan':
                     df, encoders = encoding2
                 else:
